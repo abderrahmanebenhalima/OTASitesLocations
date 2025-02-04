@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f9f9f9; }
+        .signature { margin-bottom: 40px; text-align: center; font-size: 14px; color: #555; }
+        .table-hover tbody tr:hover { background-color: #f1f1f1; }
+        #searchInput { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signature">
+            <p>Developed by:</p>
+            <p>Abderrahmane BENHALIMA,<br>
+            Field Maintenance & Readiness Engineer (41007),<br>
+            Field Maintenance & Readiness Mascara BSS,<br>
+            Technology Operations & Service Assurance / Technology & Innovation Department,<br>
+            West Region,<br>
+            OPTIMUM TELECOM ALGERIE.</p>
+        </div>
+        <h1 class="text-center">Locations</h1>
+        <input type="text" id="searchInput" class="form-control" onkeyup="searchTable()" placeholder="Search for sites...">
+        <table id="locationsTable" class="table table-bordered table-hover mt-3">
+            <thead class="thead-light">
+                <tr>
+                    <th>Code Unique</th>
+                    <th>Code Site</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>29X004</td>
+                    <td>O29X004</td>
+                    <td><a href="https://www.google.com/maps?q=35.39089,0.14861" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X005</td>
+                    <td>O29X005</td>
+                    <td><a href="https://www.google.com/maps?q=35.39525,0.12628" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X007</td>
+                    <td>O29X007</td>
+                    <td><a href="https://www.google.com/maps?q=35.380513,0.115858" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X009</td>
+                    <td>O29X009</td>
+                    <td><a href="https://www.google.com/maps?q=35.3384,0.041586" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X011</td>
+                    <td>O29X011</td>
+                    <td><a href="https://www.google.com/maps?q=35.31341667,-0.048972222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X012</td>
+                    <td>O29X012</td>
+                    <td><a href="https://www.google.com/maps?q=35.41942,0.32917" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X013</td>
+                    <td>O29X013</td>
+                    <td><a href="https://www.google.com/maps?q=35.24255,0.16034" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X015</td>
+                    <td>O29X015</td>
+                    <td><a href="https://www.google.com/maps?q=35.53164,-0.19581" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X016</td>
+                    <td>O29X016</td>
+                    <td><a href="https://www.google.com/maps?q=35.56392,-0.08981" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X017</td>
+                    <td>O29X017</td>
+                    <td><a href="https://www.google.com/maps?q=35.51857778,-0.411697222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X018</td>
+                    <td>O29X018</td>
+                    <td><a href="https://www.google.com/maps?q=35.59189,0.06911" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X021</td>
+                    <td>O29X021</td>
+                    <td><a href="https://www.google.com/maps?q=35.56111,-0.25656" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X022</td>
+                    <td>O29X022</td>
+                    <td><a href="https://www.google.com/maps?q=35.45674,0.0009" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X023</td>
+                    <td>O29X023</td>
+                    <td><a href="https://www.google.com/maps?q=35.30358,0.12536" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X024</td>
+                    <td>O29X024</td>
+                    <td><a href="https://www.google.com/maps?q=35.1194722,0.08625" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X025</td>
+                    <td>O29X025</td>
+                    <td><a href="https://www.google.com/maps?q=35.40355,0.12233" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X026</td>
+                    <td>O29X026</td>
+                    <td><a href="https://www.google.com/maps?q=35.57839,0.07775" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X031</td>
+                    <td>O29X031</td>
+                    <td><a href="https://www.google.com/maps?q=35.37933,0.24592" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X032</td>
+                    <td>O29X032</td>
+                    <td><a href="https://www.google.com/maps?q=35.33077778,0.341972222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X033</td>
+                    <td>O29X033</td>
+                    <td><a href="https://www.google.com/maps?q=35.36939,0.49072" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X034</td>
+                    <td>O29X034</td>
+                    <td><a href="https://www.google.com/maps?q=35.45139,0.68786" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X035</td>
+                    <td>O29X035</td>
+                    <td><a href="https://www.google.com/maps?q=35.51413889,0.296666667" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X037</td>
+                    <td>O29X037</td>
+                    <td><a href="https://www.google.com/maps?q=35.22855,-0.007" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X039</td>
+                    <td>O29X039</td>
+                    <td><a href="https://www.google.com/maps?q=35.58192,0.07308" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X040</td>
+                    <td>O29X040</td>
+                    <td><a href="https://www.google.com/maps?q=35.40053,0.14794" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X041</td>
+                    <td>O29X041</td>
+                    <td><a href="https://www.google.com/maps?q=35.52314,-0.18343" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X043</td>
+                    <td>O29M043</td>
+                    <td><a href="https://www.google.com/maps?q=35.39555,0.13753" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X044</td>
+                    <td>O29M044</td>
+                    <td><a href="https://www.google.com/maps?q=35.39614,0.13986" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X045</td>
+                    <td>O29X045</td>
+                    <td><a href="https://www.google.com/maps?q=35.38677778,0.137972222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X046</td>
+                    <td>O29X046</td>
+                    <td><a href="https://www.google.com/maps?q=35.40638889,0.131661111" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X047</td>
+                    <td>O29X047</td>
+                    <td><a href="https://www.google.com/maps?q=35.47433,0.16186" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X048</td>
+                    <td>O29X048</td>
+                    <td><a href="https://www.google.com/maps?q=35.31355,0.19756" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X051</td>
+                    <td>O29X051</td>
+                    <td><a href="https://www.google.com/maps?q=35.39944167,0.141947222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X055</td>
+                    <td>O29X055</td>
+                    <td><a href="https://www.google.com/maps?q=35.0979,0.354222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X056</td>
+                    <td>O29X056</td>
+                    <td><a href="https://www.google.com/maps?q=35.46336,0.29597" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X057</td>
+                    <td>O29X057</td>
+                    <td><a href="https://www.google.com/maps?q=35.60636,-0.04831" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X058</td>
+                    <td>O29X058</td>
+                    <td><a href="https://www.google.com/maps?q=35.45744,-0.39741" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X059</td>
+                    <td>O29X059</td>
+                    <td><a href="https://www.google.com/maps?q=35.52588889,-0.196333333" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X060</td>
+                    <td>O29X060</td>
+                    <td><a href="https://www.google.com/maps?q=35.58883333,0.063805556" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X061</td>
+                    <td>O29X061</td>
+                    <td><a href="https://www.google.com/maps?q=35.59172222,0.078527778" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X062</td>
+                    <td>O29X062</td>
+                    <td><a href="https://www.google.com/maps?q=35.40583333,0.151111111" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X063</td>
+                    <td>O29X063</td>
+                    <td><a href="https://www.google.com/maps?q=35.39305556,0.140280556" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X064</td>
+                    <td>O29X064</td>
+                    <td><a href="https://www.google.com/maps?q=35.41629,0.33479" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X065</td>
+                    <td>O29X065</td>
+                    <td><a href="https://www.google.com/maps?q=35.24878,0.16164" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X066</td>
+                    <td>O29X066</td>
+                    <td><a href="https://www.google.com/maps?q=35.40281,0.13839" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X067</td>
+                    <td>O29X067</td>
+                    <td><a href="https://www.google.com/maps?q=35.40024,0.13286" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X068</td>
+                    <td>O29X068</td>
+                    <td><a href="https://www.google.com/maps?q=35.38236,0.09339" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X069</td>
+                    <td>O29X069</td>
+                    <td><a href="https://www.google.com/maps?q=35.28933,0.47233" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X070</td>
+                    <td>O29X070</td>
+                    <td><a href="https://www.google.com/maps?q=35.32569,0.21389" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X071</td>
+                    <td>O29X071</td>
+                    <td><a href="https://www.google.com/maps?q=35.28875,0.29569" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X072</td>
+                    <td>O29X072</td>
+                    <td><a href="https://www.google.com/maps?q=35.17186,0.29796" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X073</td>
+                    <td>O29X073</td>
+                    <td><a href="https://www.google.com/maps?q=35.48242,0.24578" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X076</td>
+                    <td>O29X076</td>
+                    <td><a href="https://www.google.com/maps?q=35.71917,-0.25814" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X078</td>
+                    <td>O29X078</td>
+                    <td><a href="https://www.google.com/maps?q=35.532,-0.186111111" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X079</td>
+                    <td>O29X079</td>
+                    <td><a href="https://www.google.com/maps?q=35.39635278,0.139844444" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X080</td>
+                    <td>O29X080</td>
+                    <td><a href="https://www.google.com/maps?q=35.409653,0.3356438" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X081</td>
+                    <td>O29X081</td>
+                    <td><a href="https://www.google.com/maps?q=35.653,0.01376" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X082</td>
+                    <td>O29X082</td>
+                    <td><a href="https://www.google.com/maps?q=35.68292,0.20398" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X083</td>
+                    <td>O29X083</td>
+                    <td><a href="https://www.google.com/maps?q=35.63077,0.21437" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X084</td>
+                    <td>O29X084</td>
+                    <td><a href="https://www.google.com/maps?q=35.67464,-0.22" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X085</td>
+                    <td>O29X085</td>
+                    <td><a href="https://www.google.com/maps?q=35.5391,0.3695" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X086</td>
+                    <td>O29X086</td>
+                    <td><a href="https://www.google.com/maps?q=35.45697,0.39372" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X087</td>
+                    <td>O29X087</td>
+                    <td><a href="https://www.google.com/maps?q=35.42525,0.14025" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X088</td>
+                    <td>O29X088</td>
+                    <td><a href="https://www.google.com/maps?q=35.31635,0.07339" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X089</td>
+                    <td>O29X089</td>
+                    <td><a href="https://www.google.com/maps?q=35.2048,-0.15818" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X090</td>
+                    <td>O29X090</td>
+                    <td><a href="https://www.google.com/maps?q=35.38361111,0.121661111" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X091</td>
+                    <td>O29X091</td>
+                    <td><a href="https://www.google.com/maps?q=35.527,-0.19217" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X092</td>
+                    <td>O29X092</td>
+                    <td><a href="https://www.google.com/maps?q=35.52763889,-0.179611111" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X094</td>
+                    <td>O29X094</td>
+                    <td><a href="https://www.google.com/maps?q=35.3955,0.145355556" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X095</td>
+                    <td>O29X095</td>
+                    <td><a href="https://www.google.com/maps?q=35.41642,0.33106" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X096</td>
+                    <td>O29X096</td>
+                    <td><a href="https://www.google.com/maps?q=35.59547,0.07283" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X097</td>
+                    <td>O29X097</td>
+                    <td><a href="https://www.google.com/maps?q=35.59425,0.06431" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X098</td>
+                    <td>O29X098</td>
+                    <td><a href="https://www.google.com/maps?q=35.58628,0.07201" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X099</td>
+                    <td>O29X099</td>
+                    <td><a href="https://www.google.com/maps?q=35.57719,0.07153" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X100</td>
+                    <td>O29X100</td>
+                    <td><a href="https://www.google.com/maps?q=35.44058,0.52079" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X101</td>
+                    <td>O29X101</td>
+                    <td><a href="https://www.google.com/maps?q=35.1512,0.43983" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X102</td>
+                    <td>O29X102</td>
+                    <td><a href="https://www.google.com/maps?q=35.5329,0.15512" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X103</td>
+                    <td>O29X103</td>
+                    <td><a href="https://www.google.com/maps?q=35.53111,-0.27694" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X104</td>
+                    <td>O29X104</td>
+                    <td><a href="https://www.google.com/maps?q=35.53802,-0.19709" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X105</td>
+                    <td>O29X105</td>
+                    <td><a href="https://www.google.com/maps?q=35.40222,0.1567" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X107</td>
+                    <td>O29X107</td>
+                    <td><a href="https://www.google.com/maps?q=35.41017,0.13592" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X108</td>
+                    <td>O29X108</td>
+                    <td><a href="https://www.google.com/maps?q=35.52724,-0.17114" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X114</td>
+                    <td>O29X114</td>
+                    <td><a href="https://www.google.com/maps?q=35.59380556,-0.211805556" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X115</td>
+                    <td>O29X115</td>
+                    <td><a href="https://www.google.com/maps?q=35.38056,0.78896" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X116</td>
+                    <td>O29X116</td>
+                    <td><a href="https://www.google.com/maps?q=35.0996,0.227806" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X118</td>
+                    <td>O29X118</td>
+                    <td><a href="https://www.google.com/maps?q=35.32244,-0.04924" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X120</td>
+                    <td>O29X120</td>
+                    <td><a href="https://www.google.com/maps?q=35.24337,0.15272" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X121</td>
+                    <td>O29X121</td>
+                    <td><a href="https://www.google.com/maps?q=35.29479,-0.08552" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X122</td>
+                    <td>O29X122</td>
+                    <td><a href="https://www.google.com/maps?q=35.2856,-0.14718" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X123</td>
+                    <td>O29X123</td>
+                    <td><a href="https://www.google.com/maps?q=35.4094,-0.065" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X124</td>
+                    <td>O29X124</td>
+                    <td><a href="https://www.google.com/maps?q=35.43148,-0.28278" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X125</td>
+                    <td>O29X125</td>
+                    <td><a href="https://www.google.com/maps?q=35.53032,-0.16628" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X126</td>
+                    <td>O29X126</td>
+                    <td><a href="https://www.google.com/maps?q=35.41851,0.32281" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X127</td>
+                    <td>O29X127</td>
+                    <td><a href="https://www.google.com/maps?q=35.41299,0.13263" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X128</td>
+                    <td>O29M128</td>
+                    <td><a href="https://www.google.com/maps?q=35.53007,-0.19493" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X129</td>
+                    <td>O29X129</td>
+                    <td><a href="https://www.google.com/maps?q=35.26917,0.55927" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X131</td>
+                    <td>O29X131</td>
+                    <td><a href="https://www.google.com/maps?q=35.58362,0.38583" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X135</td>
+                    <td>O29X135</td>
+                    <td><a href="https://www.google.com/maps?q=35.3838,0.03314" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X136</td>
+                    <td>O29X136</td>
+                    <td><a href="https://www.google.com/maps?q=35.62081,0.12731" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X137</td>
+                    <td>O29X137</td>
+                    <td><a href="https://www.google.com/maps?q=35.509,0.25771" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X139</td>
+                    <td>O29X139</td>
+                    <td><a href="https://www.google.com/maps?q=35.3146,0.29445" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X140</td>
+                    <td>O29X140</td>
+                    <td><a href="https://www.google.com/maps?q=35.51869,-0.40517" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X141</td>
+                    <td>O29X141</td>
+                    <td><a href="https://www.google.com/maps?q=35.42209,0.33782" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X142</td>
+                    <td>O29X142</td>
+                    <td><a href="https://www.google.com/maps?q=35.3765,0.48925" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X143</td>
+                    <td>O29X143</td>
+                    <td><a href="https://www.google.com/maps?q=35.4551,0.69292" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X144</td>
+                    <td>O29X144</td>
+                    <td><a href="https://www.google.com/maps?q=35.11073,0.08775" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X145</td>
+                    <td>O29X145</td>
+                    <td><a href="https://www.google.com/maps?q=35.517,0.30551" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X146</td>
+                    <td>O29X146</td>
+                    <td><a href="https://www.google.com/maps?q=35.45402,-0.41191" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X147</td>
+                    <td>O29X147</td>
+                    <td><a href="https://www.google.com/maps?q=35.53482,-0.1917" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X148</td>
+                    <td>O29X148</td>
+                    <td><a href="https://www.google.com/maps?q=35.4395,0.20075" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X149</td>
+                    <td>O29X149</td>
+                    <td><a href="https://www.google.com/maps?q=35.38653,0.1309" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X151</td>
+                    <td>O29X151</td>
+                    <td><a href="https://www.google.com/maps?q=35.60927222,0.001322222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X154</td>
+                    <td>O29X154</td>
+                    <td><a href="https://www.google.com/maps?q=35.62002,0.11247" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X155</td>
+                    <td>O29X155</td>
+                    <td><a href="https://www.google.com/maps?q=35.57307,0.07294" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X156</td>
+                    <td>O29X156</td>
+                    <td><a href="https://www.google.com/maps?q=35.41139167,0.143055556" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X157</td>
+                    <td>O29X157</td>
+                    <td><a href="https://www.google.com/maps?q=35.58945,0.0754" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X159</td>
+                    <td>O29X159</td>
+                    <td><a href="https://www.google.com/maps?q=35.41284,0.32892" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X160</td>
+                    <td>O29X160</td>
+                    <td><a href="https://www.google.com/maps?q=35.45733,-0.0074" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X161</td>
+                    <td>O29X161</td>
+                    <td><a href="https://www.google.com/maps?q=35.51947,-0.1917" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X162</td>
+                    <td>O29X162</td>
+                    <td><a href="https://www.google.com/maps?q=35.3038,0.1314" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X163</td>
+                    <td>O29X163</td>
+                    <td><a href="https://www.google.com/maps?q=35.58269,-0.26867" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X164</td>
+                    <td>O29X164</td>
+                    <td><a href="https://www.google.com/maps?q=35.4048,0.186" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X165</td>
+                    <td>O29X165</td>
+                    <td><a href="https://www.google.com/maps?q=35.33439,0.34132" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X166</td>
+                    <td>O29X166</td>
+                    <td><a href="https://www.google.com/maps?q=35.40078,0.12659" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X167</td>
+                    <td>O29X167</td>
+                    <td><a href="https://www.google.com/maps?q=35.59676,0.07931" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X168</td>
+                    <td>O29X168</td>
+                    <td><a href="https://www.google.com/maps?q=35.531985,-0.199757" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X169</td>
+                    <td>O29X169</td>
+                    <td><a href="https://www.google.com/maps?q=35.3911,0.58497" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X171</td>
+                    <td>O29X171</td>
+                    <td><a href="https://www.google.com/maps?q=35.3176,-0.04789" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X173</td>
+                    <td>O29X173</td>
+                    <td><a href="https://www.google.com/maps?q=35.5307,-0.17494" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X175</td>
+                    <td>O29X175</td>
+                    <td><a href="https://www.google.com/maps?q=35.48033333,0.243972222" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X176</td>
+                    <td>O29X176</td>
+                    <td><a href="https://www.google.com/maps?q=35.6362,0.2524" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X177</td>
+                    <td>O29X177</td>
+                    <td><a href="https://www.google.com/maps?q=35.17515,0.06443" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X178</td>
+                    <td>O29X178</td>
+                    <td><a href="https://www.google.com/maps?q=35.42768,-0.31325" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X179</td>
+                    <td>O29X179</td>
+                    <td><a href="https://www.google.com/maps?q=35.5229,-0.34842" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X180</td>
+                    <td>O29X180</td>
+                    <td><a href="https://www.google.com/maps?q=35.65604,0.12069" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X182</td>
+                    <td>O29X182</td>
+                    <td><a href="https://www.google.com/maps?q=35.43193,-0.24482" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X203</td>
+                    <td>O29X203</td>
+                    <td><a href="https://www.google.com/maps?q=35.65659,0.0638798" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X206</td>
+                    <td>O29X206</td>
+                    <td><a href="https://www.google.com/maps?q=35.5282,-0.1437" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X207</td>
+                    <td>O29X207</td>
+                    <td><a href="https://www.google.com/maps?q=35.5368,-0.3868" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X209</td>
+                    <td>O29X209</td>
+                    <td><a href="https://www.google.com/maps?q=35.5913,0.0917" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X210</td>
+                    <td>O29X210</td>
+                    <td><a href="https://www.google.com/maps?q=35.62418,0.06123" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X212</td>
+                    <td>O29X212</td>
+                    <td><a href="https://www.google.com/maps?q=35.649,0.182" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X002</td>
+                    <td>O29X002</td>
+                    <td><a href="https://www.google.com/maps?q=35.1027,-0.0072" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X111</td>
+                    <td>O29X111</td>
+                    <td><a href="https://www.google.com/maps?q=35.3602,0.2075" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X231</td>
+                    <td>O29X231</td>
+                    <td><a href="https://www.google.com/maps?q=35.38782,0.148043" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X220</td>
+                    <td>O29X220</td>
+                    <td><a href="https://www.google.com/maps?q=35.3165,0.1661" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X038</td>
+                    <td>O29X038</td>
+                    <td><a href="https://www.google.com/maps?q=35.57243538,-0.043910382" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X110</td>
+                    <td>O29X110</td>
+                    <td><a href="https://www.google.com/maps?q=35.2953,0.1631" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X020</td>
+                    <td>O29X020</td>
+                    <td><a href="https://www.google.com/maps?q=35.4042,0.279" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X036</td>
+                    <td>O29X036</td>
+                    <td><a href="https://www.google.com/maps?q=35.3977,0.6823" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X233</td>
+                    <td>O29X233</td>
+                    <td><a href="https://www.google.com/maps?q=35.25362,0.37568" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X052</td>
+                    <td>O29X052</td>
+                    <td><a href="https://www.google.com/maps?q=35.559,0.073" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X170</td>
+                    <td>O29X170</td>
+                    <td><a href="https://www.google.com/maps?q=35.3761,0.1257" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X183</td>
+                    <td>O29X183</td>
+                    <td><a href="https://www.google.com/maps?q=35.4169,0.3401" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X181</td>
+                    <td>O29X181</td>
+                    <td><a href="https://www.google.com/maps?q=35.583464,-0.131152" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X197</td>
+                    <td>O29X197</td>
+                    <td><a href="https://www.google.com/maps?q=35.5595,-0.081" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X232</td>
+                    <td>O29X232</td>
+                    <td><a href="https://www.google.com/maps?q=35.396943,0.122439" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X106</td>
+                    <td>O29X106</td>
+                    <td><a href="https://www.google.com/maps?q=35.3165,0.1661" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X190</td>
+                    <td>O29X190</td>
+                    <td><a href="https://www.google.com/maps?q=35.414135,0.319001" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X234</td>
+                    <td>O29X234</td>
+                    <td><a href="https://www.google.com/maps?q=35.5271,-0.1631" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X244</td>
+                    <td>O29X244</td>
+                    <td><a href="https://www.google.com/maps?q=35.417053,0.134728" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X243</td>
+                    <td>O29X243</td>
+                    <td><a href="https://www.google.com/maps?q=35.400727,0.161534" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X241</td>
+                    <td>O29X241</td>
+                    <td><a href="https://www.google.com/maps?q=35.403698,0.112724" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X242</td>
+                    <td>O29X242</td>
+                    <td><a href="https://www.google.com/maps?q=35.4087,0.1197" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X247</td>
+                    <td>O29X247</td>
+                    <td><a href="https://www.google.com/maps?q=35.40006,0.153752" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X245</td>
+                    <td>O29X245</td>
+                    <td><a href="https://www.google.com/maps?q=35.387973,0.118135" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X249</td>
+                    <td>O29X249</td>
+                    <td><a href="https://www.google.com/maps?q= 35.251860°,  0.158008°" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X250</td>
+                    <td>O29X250</td>
+                    <td><a href="https://www.google.com/maps?q=35.377132,0.136822" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X246</td>
+                    <td>O29X246</td>
+                    <td><a href="https://www.google.com/maps?q=35.385444,0.136726" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X248</td>
+                    <td>O29X248</td>
+                    <td><a href="https://www.google.com/maps?q=35.125566,0.44631" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X251</td>
+                    <td>O29X251</td>
+                    <td><a href="https://www.google.com/maps?q=35.391375,0.124657" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X252</td>
+                    <td>O29X252</td>
+                    <td><a href="https://www.google.com/maps?q=35.38259625,0.12949793" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X237</td>
+                    <td>O29M237</td>
+                    <td><a href="https://www.google.com/maps?q=35.396009,0.139043" target="_blank">View on Map</a></td>
+                </tr>
+                <tr>
+                    <td>29X238</td>
+                    <td>O29M238</td>
+                    <td><a href="https://www.google.com/maps?q=35.531035,-0.192606" target="_blank">View on Map</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function searchTable() {
+            var input, filter, table, tr, td, i, j, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toLowerCase();
+            table = document.getElementById("locationsTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 1; i < tr.length; i++) {
+                tr[i].style.display = "none";
+                td = tr[i].getElementsByTagName("td");
+                for (j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
